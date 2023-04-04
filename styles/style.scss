@@ -1,0 +1,88 @@
+.navbar {background-image: url("https://i.pinimg.com/564x/5d/89/2f/5d892f1da1f4b3c5cd5b88a6c2a0d2db.jpg")}
+.navbar-brand {font-size:35px; color: purple }
+.nav-item { text-align: end; font-size:18px}
+
+
+@mixin estilo ($size, $color)
+
+{ font-size: $size;
+background-color: $color;}
+
+.footer { 
+    @include estilo( 2vh, rgb(165, 217, 233) )
+}
+
+.imgperro {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+
+  body {
+    @include estilo( 2vh, rgb(165, 217, 233) );
+    
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+h1, h2, h3 {
+    margin{
+     top: 30px;
+     bottom: 20px;
+}}
+
+p, ul, li {
+    margin {
+        top: 0;
+        bottom: 10px;
+}}
+
+
+@media screen and (min-width: 768px) {
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .maltrato {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    img {
+        flex: 1;
+        max-width: 100%;
+        height: auto;
+        padding: 50px;
+    }
+}
+
+.boton {
+  background-color: #fff; 
+  color: #000; 
+  padding: 10px; 
+  border: 1px solid blueviolet 
+}
+
+.boton:hover {
+  background-color: #ff69b4; 
+  color: #fff; 
+}
